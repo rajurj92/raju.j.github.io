@@ -1,2 +1,2 @@
 # raju.j.github.io
-description: persomal portfolio website
+description: personal portfolio website
