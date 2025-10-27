@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raju J | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-950 text-gray-100 antialiased">
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-sm sticky top-0 z-30">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center text-white font-semibold">RJ</div>
+          <div>
+            <h1 class="text-lg font-semibold">Raju J</h1>
+            <p class="text-xs text-gray-400">Frontend & aspiring Full‑Stack Developer</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#projects" class="hover:text-indigo-400">Projects</a>
+          <a href="#about" class="hover:text-indigo-400">About</a>
+          <a href="#skills" class="hover:text-indigo-400">Skills</a>
+          <a href="#contact" class="hover:text-indigo-400">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-8 items-center">
+      <div data-aos="fade-right">
+        <p class="text-indigo-400 font-medium">Hi, I’m Raju — UI/UX & Frontend Developer</p>
+        <h2 class="mt-3 text-4xl font-bold leading-tight">I build clean, responsive web interfaces with focus on usability and design.</h2>
+        <p class="mt-4 text-gray-400">Currently exploring full‑stack development while delivering intuitive UI experiences.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md">View Projects</a>
+          <a href="#contact" class="px-4 py-2 border border-gray-700 hover:bg-gray-800 rounded-md">Contact</a>
+        </div>
+      </div>
+      <div class="relative" data-aos="fade-left">
+        <img src="https://picsum.photos/600/400" class="rounded-xl shadow-lg filter blur-sm hover:blur-none transition duration-500" alt="Raju portfolio preview" />
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-semibold mb-6">Selected Projects</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-900 p-4 rounded-lg shadow-md" data-aos="fade-up">
+          <img src="https://picsum.photos/400/250" class="rounded-md mb-4 hover:blur-sm transition duration-300" alt="HealthCare Dashboard" />
+          <h4 class="font-semibold">HealthCare Dashboard</h4>
+          <p class="text-gray-400 text-sm mt-2">UI/UX + frontend for health monitoring dashboard with charts & notifications.</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
+          <img src="https://picsum.photos/401/250" class="rounded-md mb-4 hover:blur-sm transition duration-300" alt="E-Commerce" />
+          <h4 class="font-semibold">E-Commerce Redesign</h4>
+          <p class="text-gray-400 text-sm mt-2">Modern responsive layout with micro-interactions for smoother shopping flow.</p>
+        </div>
+        <div class="bg-gray-900 p-4 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://picsum.photos/402/250" class="rounded-md mb-4 hover:blur-sm transition duration-300" alt="Collaboration Tool" />
+          <h4 class="font-semibold">Collaboration Tool</h4>
+          <p class="text-gray-400 text-sm mt-2">Prototype for real-time collaborative workspace with live presence updates.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+      <p class="text-gray-400 max-w-3xl">I'm a UI/UX developer with 10 years of experience creating intuitive user interfaces and scalable front-end architectures. I'm transitioning toward full‑stack roles and preparing for SDE‑2 (JavaScript) and SDE‑1 (Java) interviews.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-semibold mb-4">Skills & Tools</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="px-3 py-1 bg-gray-800 rounded-md text-sm">HTML</span>
+        <span class="px-3 py-1 bg-gray-800 rounded-md text-sm">CSS / Tailwind</span>
+        <span class="px-3 py-1 bg-gray-800 rounded-md text-sm">JavaScript</span>
+        <span class="px-3 py-1 bg-gray-800 rounded-md text-sm">React</span>
+        <span class="px-3 py-1 bg-gray-800 rounded-md text-sm">Node.js</span>
+        <span class="px-3 py-1 bg-gray-800 rounded-md text-sm">Figma</span>
+      </div>
+    </section>
+
+    <!-- Contact with EmailJS wiring -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+      <h3 class="text-2xl font-semibold mb-4">Get In Touch</h3>
+      <p class="text-gray-400 mb-6">I'd love to collaborate or discuss opportunities. Fill out the form below, and I’ll reply within 2–3 business days.</p>
+
+      <form id="contact-form" class="grid md:grid-cols-2 gap-4 bg-gray-900 p-6 rounded-lg shadow-lg" netlify>
+        <input type="text" name="name" placeholder="Your name" class="p-3 bg-gray-800 rounded-md" required />
+        <input type="email" name="email" placeholder="Your email" class="p-3 bg-gray-800 rounded-md" required />
+        <input type="text" name="subject" placeholder="Subject" class="p-3 bg-gray-800 rounded-md md:col-span-2" />
+        <textarea name="message" placeholder="Message" class="p-3 bg-gray-800 rounded-md md:col-span-2 h-32" required></textarea>
+        <div class="md:col-span-2 flex justify-between items-center">
+          <p class="text-sm text-gray-500">Or email me at <a href="mailto:raju@example.com" class="text-indigo-400">raju@example.com</a></p>
+          <button type="submit" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 rounded-md">Send Message</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="text-center text-gray-500 py-6 border-t border-gray-800 text-sm">© <span id="year"></span> Raju J — Built with TailwindCSS</footer>
+
+    <script>
+      AOS.init({ duration: 700, once: true });
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // ✅ EmailJS integration example
+      (function() {
+        emailjs.init('YOUR_PUBLIC_KEY'); // replace with your EmailJS public key
+      })();
+
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+          .then(() => {
+            alert('Message sent successfully!');
+            form.reset();
+          }, (error) => {
+            alert('Failed to send message: ' + JSON.stringify(error));
+          });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  </body>
+</html>
